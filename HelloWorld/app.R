@@ -12,12 +12,15 @@ library(shiny)
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
+  
+  
     # Application title
     titlePanel("Old Faithful Geyser Data"),
-
+    
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
+          h3("Note: while the data view will show only"),
             sliderInput("bins",
                         "Number of bins:",
                         min = 1,
